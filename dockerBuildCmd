@@ -1,0 +1,8 @@
+docker build --no-cache -t squid-compile:v1 \
+  --build-arg SQUID_GIT_REPO="https://github.com/squid-cache/squid.git" \
+  --build-arg SQUID_GIT_BRANCH="SQUID_7_4" \
+  --build-arg CONF_GIT_REPO="https://github.com/itbird2020/squid.git" \
+  --build-arg CONF_GIT_BRANCH="master" \
+  --build-arg CONF_GIT_PATH="squid.conf" \
+  .
+
